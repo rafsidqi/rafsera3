@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Styles | Graphic Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Alex Styles</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-tooltip="Learn more about me">About</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-tooltip="See my latest work">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link" data-tooltip="Get in touch">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <h1 class="hero-title">Designing Digital <br><span class="text-gradient">Experiences.</span></h1>
+                <p class="hero-subtitle">I'm Alex, a graphic designer helping brands tell their stories through
+                    meaningful and modern visuals.</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>With over 5 years of experience in the design industry, I focus on creating clean, effective,
+                            and memorable designs. My approach is rooted in understanding the user and the brand's core
+                            values.</p>
+                        <p>I specialize in:</p>
+                        <ul class="skills-list">
+                            <li>Brand Identity</li>
+                            <li>UI/UX Design</li>
+                            <li>Typography</li>
+                            <li>Digital Illustration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2 class="section-title">Selected Work</h2>
+                <div class="portfolio-grid">
+                    <article class="project-card" data-project="project1">
+                        <div class="card-image placeholder-image"></div>
+                        <div class="card-content">
+                            <span class="project-category">Branding</span>
+                            <h3 class="project-title">Project Alpha</h3>
+                            <p class="project-description">A complete rebrand for a fintech startup.</p>
+                            <button class="link-arrow btn-link">View Case Study &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="project-card" data-project="project2">
+                        <div class="card-image placeholder-image"></div>
+                        <div class="card-content">
+                            <span class="project-category">Web Design</span>
+                            <h3 class="project-title">Neon Lights</h3>
+                            <p class="project-description">E-commerce website UI for a fashion brand.</p>
+                            <button class="link-arrow btn-link">View Case Study &rarr;</button>
+                        </div>
+                    </article>
+                    <article class="project-card" data-project="project3">
+                        <div class="card-image placeholder-image"></div>
+                        <div class="card-content">
+                            <span class="project-category">Illustration</span>
+                            <h3 class="project-title">City Vibes</h3>
+                            <p class="project-description">A series of digital illustrations for a magazine.</p>
+                            <button class="link-arrow btn-link">View Case Study &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="contact-subtitle">Have a project in mind? Fill out the form below.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <p id="modal-category" class="project-category">Category</p>
+                <div class="modal-image placeholder-image"></div>
+                <p id="modal-description">Project description details goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Styles. Designed & Built with passion.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
